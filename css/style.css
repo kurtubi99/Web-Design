@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+/*---- Common CSS ----*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.section-heading{
+	text-align: center;
+	padding-top: 115px;
+	padding-bottom: 90px;
+}
+.section-heading p{
+	font-size: 14px;
+	color: #ffe600;
+}
+/*---- Landing Page CSS ----*/
+.landing-page{
+	background-image: url('../images/01.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 150px;
+	padding-bottom: 90px;
+}
+
+.content p{
+	font-weight: 400;
+}
+.content h2{
+	font-weight: 300;
+	word-spacing: 6px;
+}
+.content button{
+	border: 1px solid #ffe600;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #fff;
+	font-weight: lighter;
+	padding: 7px 45px;
+	margin-top: 75px;
+}
+.content-icon{
+	color: #ffffff;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+/*---- Navbar CSS ----*/
+.project-nav{
+	padding: 7px 0;
+    border-bottom: 1px solid #ffe600;
+}
+.project-nav ul{}
+.project-nav ul li{
+	padding: 5px 7px;
+	transition: 0.5s;
+}
+.project-nav ul li:hover{
+	border: 1px solid #ffe600;
+}
+.project-nav ul li a{
+	color: #b4b4b4;
+	transition: 0.5s;
+}
+.project-nav ul li a:hover{
+	color: #000;
+}
+
+/*---- About Section CSS ----*/
+.about{
+	padding-bottom: 75px;
+}
+.about span{
+	color: #ffe600;
+    font-size: 25px;
+    border-right: 1px solid;
+    margin-right: 7px;
+    padding-right: 5px;
+}
+.about p{
+	font-weight: 300;
+	color: #9d9d9d;
+}
+
+/*---- Quote Section CSS ----*/
+.quote{
+	background-image: url('../images/02.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 165px;
+    padding-bottom: 125px;
+}
+.quote h5{
+	font-style: italic;
+	font-weight: 300;
+	line-height: 30px;
+
+}
+.quote p{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*---- Portfolio Section CSS ----*/
+.portfolio{
+	padding-bottom: 35px;
+}
+.port-img{
+	position: relative;
+	transition: 0.8s;
+}
+.port-img-overlay{
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	background-color: rgba(255, 235, 51, 0.8);
+	top: 100%;
+	display: none;
+}
+.port-img-overlay h4{
+	padding-top: 65px;
+}
+.port-img-overlay p{
+	font-size: 15px;
+	color: #fff;
+}
+.port-img:hover .port-img-overlay{
+	top: 0;
+	display: block;
+}
+
+/*---- Client Section CSS ----*/
+.clients{
+	background-image: url('../images/bg-3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 60px;
+}
+.clients-icon{}
+.clients-icon a{
+	margin-right: 85px;
+}
+
+/*---- Contact Section CSS ----*/
+.contact{
+	padding-bottom: 75px;
+}
+
+.contact input,
+.contact textarea{
+	background-color: #ffe600;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    font-weight: 300;    
+}
+
+.contact input:focus,
+.contact textarea:focus{
+	outline: none;
+}
+
+.contact button{
+	background-color: #000;
+	color: #ffe600;
+	padding: 10px 18px;
+	border-radius: 5px;
+	border: none;
+}
+
+/*---- Footer Section CSS ----*/
+.footer{
+	background-color: #000;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+.footer p{
+	color: #ffe600;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.footer i{
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 20px;
+}
+.footer i:hover{
+	color: #ffe600 !important;
+}
+
+/*---- Rasponsive CSS ----*/
+
+/*---- For Mobile Device*/
+@media screen and (min-width: 425px) and (max-width: 575px) {
+	.port-img-overlay h4{
+		padding-top: 140px;
+		font-size: 45px;
+	}
+	.port-img-overlay p{
+		font-size: 20px;
+	}
+}
+
+/*---- For Tab Device ----*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.port-img-overlay{
+		position: absolute;
+    	width: 92%;
+    	height: 100%;
+	}
+	.port-img-overlay h4{
+		padding-top: 85px;
+		font-size: 35px;
+	}
+	.port-img-overlay p{
+		font-size: 20px;
+	}
+}
+
+/*---- For Laptop Device ----*/
+@media screen and (min-width: 992px) and (max-width: 1468px){
+	.port-img-overlay{
+		position: absolute;
+    	width: 90%;
+    	height: 100%;
+	}
+}
+
